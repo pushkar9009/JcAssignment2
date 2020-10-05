@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--<MultiSelectListPreference
+    android:key="multi_select_preference"
+    android:title="@string/sort_by"
+    android:entries="@array/sort_options"
+    android:entryValues="@array/sort_values"
+    android:dialogTitle="@string/sort_list"
+    />-->
+
+    <DropDownPreference
+        android:key="drop_select_preference"
+        android:title="@string/sort_by"
+        android:entries="@array/sort_options"
+        app:useSimpleSummaryProvider="true"
+        android:entryValues="@array/sort_values"
+        android:dialogTitle="@string/sort_list"
+        />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="distance_preference"
+        android:title="@string/dist_miles"
+
+        />
+</PreferenceScreen>
